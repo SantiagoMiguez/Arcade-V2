@@ -1,0 +1,91 @@
+<html>
+  
+  <h1> Proyecto 1 Equipo Composta</h1>
+
+<h3> Miembros</h3>
+
+<p>Juan Gerardo Castillo</p>
+
+<p>Juan Servando Banderas</p>
+
+<p>Santiago Miguez</p>
+
+<h4>Linked In</h4>
+
+<p><a href="https://www.linkedin.com/in/juan-castillo-64251b15a/"> Linked In Juan Gerardo</a></p>
+
+<p><a href="https://www.linkedin.com/in/smigueztr/"> Linked In Santiago </a></p>
+
+<p><a href="https://www.linkedin.com/in/juan-servando-banderas-martinez-16ab92144/"> Linked In Juan Servando </a></p>
+
+<h4>Razón de ser un equipo</h4>
+
+<p> Tenemos muchas clases juntos y compartimos horarios similares lo que permite estar checando el proyecto constantemente y dedicarle tiempo </p>
+
+<h4> Contexto del problema </h4>
+
+<p>El 40% de los alimentos que se producen, terminan en la basura. Este problema de desperdicio se torna cada día más revelante en un mundo que cada día se acerca más a la insuficiencia alimentaria para miles de millones de personas. El objetivo de este aparato es transformar el problema en una solución. Aprovechar la conveniencia de la naturaleza para convertir lo que desperdiciamos en una fuente de alimento. </p>
+
+<h4>Preguntas</h4>
+
+<ol>
+
+	<li>¿Que cambios podriamos hacer con este arcade?</li>
+	<li>¿Cual seria nuestro mercado? </li>
+	<li>¿Como podriamos crear onciencia en el usuario?</li>
+</ol>
+
+<h4>Plan</h4>
+
+<p>Nuestro objetivo es hacer un juego arcade, que fomente el tirar basura orgánica para después con la composta tener una especie de abono. Este juego está planeado para que podamos ir llenando un envase de aluminio y mientras más lleno estaríamos alcanzando un mayor nivel en el juego. Los materiales del juego serían potencialmente triplay, aluminio y tal vez un poco de plástico para la canasta. El primer paso es encontrar las medidas de la canasta y diseñar un mecanismo para que no se atore la basura. Una especie de compuerta con una pala de material sólido para poder empujar la basura hacia el fondo del recipiente. También un extra que quisieramos poner en el juego es una maseta para plantar.</p>
+<p>El segundo paso sería armar primero el recipiente, o conseguirlo para después montar la canasta y tener la base firme para que no se rompa o caiga el juego</p>
+<p>El tercer paso es la instalación o unión de estos dos elementos y también detalles de funcionamiento como la pala.Posteriormente se decoraria y peobaria</p>
+
+<h4>Link Github</h4>
+
+<p><a href="https://github.com/juange44/Juange.git"> Github Juan Gerardo </a></p>
+
+<p><a href="https://github.com/SantiagoMiguez"> Github Santiago </a></p>
+
+<p><a href="https://github.com/Juanser1"> Github Juan Servando </a></p>  
+  
+  <p style="color:red;font-size:25"> Preguntas posibles</p>
+<p>*Hacer las preguntas igual que como aparecea continuacion*</p>  
+   <ol>
+
+	<li>¿Cuál es el problema que buscamos solucionar?</li>
+	<li>¿Qué?</li>
+	<li>¿Quién?</li>
+	<li>¿Dondé?</li>
+  <li> ¿Por qué?</li>
+     <li>¿Cuandó?</li>
+  
+</ol>
+    <head>
+        <script>
+            know = {
+                "¿Cuál es el problema que buscamos solucionar?" : "El desperdicio de alimentos y la infertilidad de la tierra.",
+                "¿Qué?" : "El desperdicio de 40% de los alimentos que se producen y la falta de fertilidad de la tierra.",
+                "¿Quién?" : "Las personas de la Zona Metropolitana de Guadalajara con acceso a un espacio pequeño de jardinería.",
+              "¿Dondé?":"En la Zona Metropolitana de Guadalajara. ",
+              "¿Por qué?":"Por qué no existe un proceso eficiente de reciclaje de desechos orgánicos y nos permitiría convertir lo que se desecha en nutriente para la tierra y por consecuencia, alimento para los humanos.",
+              "¿Cuandó?":"Actualmente",
+              "hola":"Hola, hazme una pregunta",
+            };
+            function talk() {
+                var user = document.getElementById("userBox").value;
+                document.getElementById("userBox").value = "";
+                document.getElementById("chatLog").innerHTML += user+"<br>";
+                if (user in know) {
+                    document.getElementById("chatLog").innerHTML += know[user]+"<br>";
+                } else {
+                    document.getElementById("chatLog").innerHTML += "No entiendo, pregunte otra vez <br>";
+                }
+            } 
+        </script>
+    </head>
+    <body>
+      <p style="color:green;font-size:20px;"id="chatLog">C H A T B O T<br></p>
+        <input id="userBox" type="text" onkeydown="if (event.keyCode == 13) {talk()}">
+    </body>
+</html>
